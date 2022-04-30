@@ -1,0 +1,48 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 2rem;
+}
+
+/* grid container. if no max width is specified, the rule below would just keep creating columns every ___px */
+section.container {
+  /* max-width: 1200px; */
+  margin: auto;
+  display: grid;
+  grid-gap: 1rem;
+
+  /* This is the rule that is the main focus of this project. It is essentially a condition that creates a 300px column if there's room. The columns will also respond to screen changes, it's not just a fixed 300px column */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.card {
+  width: 100%;
+  min-height: 200px;
+  border: 2px solid black;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 1rem;
+
+  display: grid;
+  /* same here, a card will have 1 column unless there's enough room for 2x200px columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0.5rem;
+}
