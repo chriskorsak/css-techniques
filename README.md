@@ -25,3 +25,9 @@ This CSS technique uses flex-box, which is a great way to create a simple respon
 This CSS technique creates a hamburger menu for mobile devices, and a full navigation menu for laptop/desktop screens. This example also notably uses JavaScript to add and remove CSS classes.
 
 (link)
+
+## Footer at bottom of page
+
+This CSS technique ensures the footer section is always at the bottom of the page, even if the page content doesn't push the footer down all the way. This technique uses flex-box on the body element.
+
+(link)
